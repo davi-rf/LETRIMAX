@@ -12,16 +12,16 @@ O objetivo do jogo é descobrir a **palavra secreta de 5 letras** em até **6 te
 
 ## 🎮 Como jogar
 
-1. ▶️ Execute o arquivo `main.py`  
-2. ⏱️ Escolha a velocidade de digitação  
-3. ⌨️ Digite palavras de 5 letras válidas até acertar ou acabar as tentativas  
-4. 🧠 Veja seu placar ao final de cada rodada  
+1. Execute o arquivo `main.py`  
+2. Escolha a velocidade de digitação  
+3. Digite palavras de 5 letras válidas até acertar ou acabar as tentativas  
+4. Veja seu placar ao final de cada rodada  
 
 ## ⚙️ Requisitos
 
-- 🐍 Python instalado  
-- 📦 Biblioteca `unidecode`  
-- 📁 Certifique-se de que o arquivo `br-utf8.txt` está na mesma pasta que o `main.py`  
+- Python instalado  
+- Biblioteca `unidecode`  
+- Certifique-se de que o arquivo `br-utf8.txt` está na mesma pasta que o `main.py`  
 
 ## 📚 Referência
 
