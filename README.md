@@ -27,5 +27,5 @@ O objetivo do jogo é descobrir a **palavra secreta de 5 letras** em até **6 te
 
 - 📄 FEOFILOFF, Paulo. *br-utf8.txt – Lista de palavras do português brasileiro*.
 - 📍 São Paulo: Instituto de Matemática e Estatística da Universidade de São Paulo, 2025.
-- [🔗 Disponível aqui](https://www.ime.usp.br/~pf/dicios)
+- 🔗 [Disponível aqui](https://www.ime.usp.br/~pf/dicios)
 - Acesso em: 09 ago. 2025.
