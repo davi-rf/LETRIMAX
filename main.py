@@ -2,6 +2,8 @@
 from time import sleep
 from unidecode import unidecode
 from random import choice
+from os import path
+from json import dump
 
 # definições das funções que serão usadas
 TP = 0.05 # tempo de digitação padrão
