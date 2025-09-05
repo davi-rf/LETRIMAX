@@ -84,6 +84,7 @@ except Exception:
     exit()
 
 backup_palavras = palavras.copy()
+txt_json = []
 
 placar = {'Vitórias': 0, 'Derrotas': 0}
 while True:
@@ -135,6 +136,8 @@ while True:
         acertou = False
         digit(f'Suas tentativas acabaram.\nA {BOLD}PALAVRA SECRETA{RESET} era {BOLD}{pcerta}{RESET} ', 1)
     
+    txt_json.append({'Palavra': pcerta, 'Tentativas': m, 'Acertou': acertou})
+
     if acertou: placar['Vitórias'] += 1
     else: placar['Derrotas'] += 1
     mostrar_placar = val_resp('Quer ver seu placar? [S/N] ', ['S', 'N'], 'Resposta inválida, tente novamente. ', 2, z=0)
@@ -146,5 +149,19 @@ while True:
     continuar = val_resp('Quer jogar mais uma vez? [S/N] ', ['S', 'N'], 'Resposta inválida, tente novamente. ', 2, z=0)
     if continuar == 'N': 
         break
+
+txt_json.insert(0, placar)
+json = val_resp('Quer salvar o histórico do jogo em um arquivo .json? [S/N] ', ['S', 'N'], 'Resposta inválida, tente novamente. ', 2, z=0)
+if json == 'S':
+    if path.exists('historico_letrimax.json'):
+        contador = 1
+        while True:
+            if not path.exists(f'historico_letrimax({contador}).json'):
+                nome_arquivo = f'historico_letrimax({contador}).json'
+                break
+            contador += 1
+        
+        with open(nome_arquivo, 'w', encoding='utf-8') as arquivo:
+            dump(txt_json, arquivo, ensure_ascii=False, indent=4)
 
 digit(f'\nObrigado por ter jogado {BOLD}LETRIMAX{RESET}!')
