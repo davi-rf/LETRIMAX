@@ -32,7 +32,7 @@ def val_resp(msg, conj_resp, erro_msg, fim=1, t=None, z=1):
     return resp
 
 # definição dos códigos de cor
-RESET = '\033[0;38;5;15m'
+RESET = '\033[0m'
 BOLD = '\033[1;38;5;15m'
 GREEN = '\033[1;38;5;108m'
 YELLOW = '\033[1;38;5;220m'
