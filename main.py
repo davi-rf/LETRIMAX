@@ -5,7 +5,7 @@ from random import choice
 from os import path
 from json import dump
 
-# definições das funções que serão usadas
+# criação de utilitários
 TP = 0.05 # tempo de digitação padrão
 
 def digit(msg, fim=0, t=None):
@@ -13,28 +13,23 @@ def digit(msg, fim=0, t=None):
     for l in msg:
         print(l, end='', flush=True)
         sleep(t)
-    if fim == 1:
-        return input()
-    elif fim == 2: 
-        print(end='')
-    else: 
-        print()
+    if fim == 1: return input()
+    if fim == 2: print(end=''); return
+    print()
 
 def val_resp(msg, conj_resp, erro_msg, fim=1, t=None, z=1):
     resp = digit(msg, 1, t).strip().replace(' ', '').upper()
-    if z != 1:
-        resp = resp[0]
+    if z != 1: resp = resp[0]
     while resp not in conj_resp:
         digit(erro_msg, fim)
         resp = digit(msg, 1, t).strip().replace(' ', '').upper()
-        if z != 1:
-            resp = resp[0]
+        if z != 1: resp = resp[0]
     return resp
 
-# definição dos códigos de cor
-RESET = '\033[0m'
-BOLD = '\033[1;38;5;15m'
-GREEN = '\033[1;38;5;108m'
+# cores
+RESET  = '\033[0m'
+BOLD   = '\033[1;38;5;15m'
+GREEN  = '\033[1;38;5;108m'
 YELLOW = '\033[1;38;5;220m'
 
 # introduzindo o jogador ao jogo
