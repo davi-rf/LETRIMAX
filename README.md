@@ -1,4 +1,7 @@
-# 🎯 **LETRIMAX**
+# **LETRIMAX**
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
 
 **LETRIMAX** é um jogo de adivinhação de palavras inspirado no famoso jogo **Wordle** 🟩🟨⬜.
 
