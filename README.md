@@ -3,7 +3,6 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
-![TXT](https://img.shields.io/badge/TXT-0A1A2F?style=for-the-badge&logo=readthedocs&logoColor=white)
 
 **LETRIMAX** é um jogo de adivinhação de palavras inspirado no famoso jogo **Wordle**.
 
